@@ -2,6 +2,13 @@
   "name": "stay-hydrated",
   "version": "0.1.0",
   "private": true,
+  "description": "Drink More Water Desktop App",
+  "author": "jpilapil",
+  "main": "public/electron.js",
+  "build": {
+    "appId": "drinkmore.water"
+  },
+  "homepage": "./",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
