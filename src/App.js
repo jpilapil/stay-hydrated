@@ -65,7 +65,8 @@ function App() {
     clearInterval(intervalId);
     // set intervalId to null
     setIntervalId(null);
-
+    // reset time left
+    setTimeLeft(60 * 30);
     // reset the timer to 30 minutes (timerLength)
     setTimerLength(60 * 30);
   };
