@@ -37,7 +37,7 @@ function App() {
 
   const handleStartStopClick = () => {
     if (isStarted) {
-      // if timer is started, we want to stop timer // if timer is started, we want to stop timer
+      // if timer is started, we want to stop timer
       clearInterval(intervalId);
       setIntervalId(null);
     } else {

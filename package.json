@@ -6,7 +6,7 @@
   "author": "jpilapil",
   "main": "public/electron.js",
   "build": {
-    "appId": "drinkmore.water"
+    "appId": "stay.hydrated"
   },
   "homepage": "./",
   "dependencies": {
