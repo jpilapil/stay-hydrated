@@ -5,7 +5,7 @@ Drinking water is important, this lightweight desktop application is here to rem
 
 ### Technologies used
 
-Electron.js
+Electron.js\
 React.js
 
 
