@@ -1,0 +1,46 @@
+body {
+  background-color: $background;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.set-timer-buttons {
+  border: 1px solid $primary;
+  text-align: center;
+  justify-content: center;
+  color: $background;
+  width: 50px;
+  height: 50px;
+  padding: 7px 10px;
+  border-radius: 25px;
+  font-size: 10px;
+  text-align: center;
+  background-color: $background;
+}
+
+.btn-link {
+  color: $primary;
+}
+
+.btn-link:hover {
+  color: $secondary;
+  text-decoration: none;
+}
+
+.plus-button {
+  color: $primary;
+  font-size: 2rem;
+}
+
+.minus-button {
+  color: $primary;
+  font-size: 2rem;
+}
