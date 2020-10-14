@@ -5,7 +5,7 @@ import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 function SetTime(props) {
   return (
     <>
-      <div className="row mt-2">
+      <div className="row mt-1">
         <div className="col-12 d-flex justify-content-center">
           <label
             className="set-timer-buttons mx-2"
