@@ -19,10 +19,10 @@ Drinking water is important, this lightweight desktop application is here to rem
 
 
 - Install dependencies:
-<pre><code>npm i OR yarn i
+<pre><code>npm i
 </code></pre>
 
 
 - Run:
-<pre><code>npm start OR yarn start
+<pre><code>npm start
 </code></pre>
