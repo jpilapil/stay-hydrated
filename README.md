@@ -5,9 +5,9 @@ Drinking water is important, this lightweight desktop application is here to rem
 
 ### Technologies used
 
-- Electron.js\
-- React.js\
-- Moment.js\
+- Electron.js
+- React.js
+- Moment.js
 - Bootstrap
 
 
