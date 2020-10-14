@@ -53,7 +53,7 @@ function App() {
             return prevTimeLeft;
           }
         });
-      }, 100);
+      }, 1000);
       setIntervalId(newIntervalId);
     }
   };

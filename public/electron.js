@@ -40,10 +40,26 @@ function createWindow() {
 
     // toggle window through sys tray
     tray.on("click", (event, bounds) => {
+      // click even bounds
+      const { x, y } = bounds;
+
+      // window height and width (useful if i ever want to allow users to resize window)
+      const { height, width } = win.getBounds();
       // console.log(bounds.x, bounds.y);
       if (win.isVisible()) {
         win.hide();
       } else {
+        // sets y position based on user OS
+        // if OSX, place window under icon
+        // if !OSX, place window above icon
+        const yPosition = process.platform === "darwin" ? y : y - height;
+        // set window under or above sys tray icon
+        win.setBounds({
+          x: x - width / 2,
+          y: yPosition,
+          height,
+          width,
+        });
         win.show();
       }
     });
