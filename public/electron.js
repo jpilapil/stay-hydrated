@@ -64,7 +64,7 @@ function createWindow() {
       }
     });
 
-    // right click
+    // right click - quit option
     tray.on("right-click", () => {
       const menuConfig = Menu.buildFromTemplate([
         {
