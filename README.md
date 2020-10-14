@@ -17,16 +17,12 @@ Drinking water is important, this lightweight desktop application is here to rem
 <pre><code>git clone https://github.com/jpilapil/stay-hydrated.git
 </code></pre>
 
+
 - Install dependencies:
-<pre><code>npm i
-</code></pre>
-or
-<pre><code>yarn i
+<pre><code>npm i OR yarn i
 </code></pre>
 
+
 - Run:
-<pre><code>npm start
-</code></pre>
-or
-<pre><code>yarn start
+<pre><code>npm start OR yarn start
 </code></pre>
