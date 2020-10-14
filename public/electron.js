@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Tray } = require("electron");
+const { app, BrowserWindow, Tray, Menu } = require("electron");
 const path = require("path");
 const isDev = require("electron-is-dev");
 
@@ -36,9 +36,9 @@ function createWindow() {
     const iconName =
       process.platform === "win32" ? "windows-icon.png" : "iconTemplate.png";
     const iconPath = path.join(__dirname, `../src/assets/${iconName}`);
-    tray = new Tray(iconPath);
+    let tray = new Tray(iconPath);
 
-    // toggle window through sys tray
+    // toggle window through sys tray on left click
     tray.on("click", (event, bounds) => {
       // click even bounds
       const { x, y } = bounds;
@@ -63,10 +63,26 @@ function createWindow() {
         win.show();
       }
     });
+
+    // right click
+    tray.on("right-click", () => {
+      const menuConfig = Menu.buildFromTemplate([
+        {
+          label: "Quit",
+          click: () => app.quit(),
+        },
+      ]);
+
+      tray.popUpContextMenu(menuConfig);
+    });
   };
 
   return createTray();
 }
+
+// onRightClick() {
+
+// }
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
