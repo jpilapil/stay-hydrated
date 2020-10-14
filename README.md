@@ -5,10 +5,21 @@ Drinking water is important, this lightweight desktop application is here to rem
 
 ### Technologies used
 
-Electron.js\
-React.js
+- Electron.js\
+- React.js\
+- Moment.js\
+- Bootstrap
 
 
 ### Installation
 
-test
+- Clone this repository:
+<pre><code>git clone https://github.com/jpilapil/stay-hydrated.git
+</code></pre>
+
+- Run:
+<pre><code>npm start
+</code></pre>
+or
+<pre><code>yarn start
+</code></pre>
