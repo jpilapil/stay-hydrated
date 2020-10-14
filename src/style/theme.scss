@@ -13,5 +13,16 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
-// fonts and sizing
+// fonts and button sizing
 $h1-font-size: $font-size-base * 5;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$font-family-sans-serif: "Montserrat", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-serif: "Montserrat", sans-serif;
+$font-family-brand: "Montserrat", sans-serif;
+
+$headings-font-family: $font-family-brand;
+$input-btn-font-family: $font-family-sans-serif;
+$btn-font-family: $input-btn-font-family;
+$input-font-family: $input-btn-font-family;
