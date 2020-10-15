@@ -90,6 +90,5 @@ function createWindow() {
 // Some APIs can only be used after this event occurs.
 // app.whenReady().then(createWindow);
 app.on("ready", () => {
-  // createTray();
   createWindow();
 });
