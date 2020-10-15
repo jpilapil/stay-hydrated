@@ -41,7 +41,7 @@ function createWindow() {
     const iconName =
       process.platform === "win32" ? "windows-icon.png" : "iconTemplate.png";
     const iconPath = path.join(__dirname, `../src/assets/${iconName}`);
-    let tray = new Tray(iconPath);
+    tray = new Tray(iconPath);
 
     // toggle window through sys tray on left click
     tray.on("click", (event, bounds) => {
