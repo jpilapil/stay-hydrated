@@ -26,6 +26,11 @@ function createWindow() {
       : `file://${path.join(__dirname, "../build/index.html")}`
   );
 
+  // hide window if user clicks on another window
+  win.on("blur", () => {
+    win.hide();
+  });
+
   // Open the DevTools.
   // win.webContents.openDevTools()
 
