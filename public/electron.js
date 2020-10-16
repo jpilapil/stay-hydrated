@@ -75,6 +75,14 @@ function createWindow() {
     // right click - quit option
     tray.on("right-click", () => {
       const menuConfig = Menu.buildFromTemplate([
+        {
+          label: "About",
+          click: () => {
+            require("electron").shell.openExternal(
+              "https://github.com/jpilapil/stay-hydrated/blob/master/README.md"
+            );
+          },
+        },
         { type: "separator" },
         {
           label: "Quit Hydrating",
