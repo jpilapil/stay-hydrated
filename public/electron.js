@@ -75,9 +75,11 @@ function createWindow() {
     // right click - quit option
     tray.on("right-click", () => {
       const menuConfig = Menu.buildFromTemplate([
+        { type: "separator" },
         {
-          label: "Quit",
+          label: "Quit Hydrating",
           click: () => app.quit(),
+          accelerator: "CmdOrCtrl+Q",
         },
       ]);
 
