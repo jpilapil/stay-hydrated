@@ -43,6 +43,9 @@ function createWindow() {
     const iconPath = path.join(__dirname, `../src/assets/${iconName}`);
     tray = new Tray(iconPath);
 
+    // tooltip on hover
+    tray.setToolTip("Stay Hydrated");
+
     // toggle window through sys tray on left click
     tray.on("click", (event, bounds) => {
       // click even bounds
