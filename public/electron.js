@@ -39,7 +39,7 @@ function createWindow() {
     // icon goes here
     // if program is running on win, use windows icon, else use template
     const iconName =
-      process.platform === "win32" ? "windows-icon.png" : "iconTemplate.png";
+      process.platform === "win32" ? "shIconx2.png" : "shIcon.png";
     const iconPath = path.join(__dirname, `../src/assets/${iconName}`);
     tray = new Tray(iconPath);
 
